@@ -20,15 +20,15 @@ def fetch_and_push():
     }
 
     params = {
-        "obj_cache_accl": "0",
-        "start_dt": "2025-04-22T00:00:00",
-        "comptype": "availability",
-        "compsubject": "location",
-        "page_size": "100",
-        "spaces_query_id": "18413",
-        "include": "closed blackouts pending related empty",
-        "caller": "pro-AvailService.getData"
-    }
+    "obj_cache_accl": "0",
+    "start_dt": "2025-04-22T00:00:00",
+    "comptype": "availability",
+    "compsubject": "location",
+    "page_size": "100",
+    "spaces_query_id": "18413,18414,18415,18416,18417,18418",
+    "include": "closed blackouts pending related empty",
+    "caller": "pro-AvailService.getData"
+}
 
     res = requests.get("https://25live.collegenet.com/25live/data/uc/run/availability/availabilitydata.json",
                        headers=headers, params=params)
